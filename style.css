@@ -1,0 +1,145 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --section-bg: #fff;
+  --primary: #0072ff;
+  --secondary: #00c6ff;
+  --header-bg: #333;
+  --header-text: #fff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f4f4f4;
+  --section-bg: #1e1e1e;
+  --primary: #00c6ff;
+  --secondary: #0072ff;
+  --header-bg: #1e1e1e;
+  --header-text: #f4f4f4;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--secondary);
+}
+
+.hero {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  background: var(--section-bg);
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 0.7s ease-in;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.3rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--primary);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--header-bg);
+  color: var(--header-text);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Dark mode toggle button */
+.toggle-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+.toggle-btn:hover {
+  background: var(--secondary);
+}
+#ppic
+{
+    width: 150px;
+    border-radius: 50%;
+    position: static;
+}
