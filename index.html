@@ -1,82 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nivesh N S | Web Developer</title>
+  <title>Nivesh N S | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-  <header>
-    <nav>
+  <header class="hero-section">
+    <div class="hero-content fade-in">
       <h1>Nivesh N S</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <p class="tagline">Aspiring Software & Web Developer</p>
+      <p class="subline">B.Sc Computer Science | Thiagarajar College</p>
+    </div>
   </header>
 
-  <section class="hero">
-    <img src="ppic.jpeg" alt="" id="ppic">
-    <h2>Hello, I'm Nivesh 👋</h2>
-    <p>A passionate Web Developer & Computer Science Student</p>
-  </section>
+  <nav class="navbar slide-in-top">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section id="about">
+  <section id="about" class="section fade-in">
     <h2>About Me</h2>
-    <p>I am a B.Sc. Computer Science student at Thiagarajar College, Madurai. I love building websites, learning new technologies, and growing step by step toward becoming a full-stack developer. I'm currently exploring freelancing opportunities and investing for the future.</p>
+    <p>
+      I am Nivesh, a passionate B.Sc Computer Science student with hands-on experience in Web Development and Software Development. I enjoy building clean, responsive web applications and solving coding problems. I have experience in Java, C, Python basics, HTML, CSS, JavaScript, MongoDB, and RDBMS. Currently preparing for software engineering and full-stack development roles.
+    </p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>Responsive Design</li>
-    </ul>
+  <section id="skills" class="section fade-in">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box hover-zoom">
+        <h3>Programming</h3>
+        <p>Java, C, Python (Basics)</p>
+      </div>
+      <div class="skill-box hover-zoom">
+        <h3>Web Development</hh3>
+        <p>HTML, CSS, JavaScript, Responsive Design</p>
+      </div>
+      <div class="skill-box hover-zoom">
+        <h3>Databases</h3>
+        <p>RDBMS, MongoDB Basics, SQL</p>
+      </div>
+      <div class="skill-box hover-zoom">
+        <h3>Tools</h3>
+        <p>Git, GitHub, VS Code</p>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section fade-in">
     <h2>Projects</h2>
-    <ul>
-      <li>✅ Simple Calculator (HTML/CSS/JS)</li>
-      <li>✅ To-Do List App</li>
-      <li>📌 Portfolio Website (this site!)</li>
-      <li>📌 Upcoming: Responsive Navbar, Login Page UI, Weather App</li>
-    </ul>
+    <div class="projects-grid">
+      <div class="project-card hover-rise">
+        <h3>To-Do List App</h3>
+        <p>A responsive to-do list app with add/edit/delete features and local storage support.</p>
+        <a href="https://nive5h.github.io/To-Do-list/" target="_blank">Live Demo</a> |
+        <a href="https://github.com/nive5h/To-Do-list" target="_blank">GitHub</a>
+      </div>
+
+      <div class="project-card hover-rise">
+        <h3>Simple Calculator</h3>
+        <p>A functional calculator built using JavaScript supporting basic operations.</p>
+        <a href="https://nive5h.github.io/Simple-Calculator/" target="_blank">Live Demo</a> |
+        <a href="https://github.com/nive5h/Simple-Calculator" target="_blank">GitHub</a>
+      </div>
+    </div>
   </section>
 
-  <section id="certifications">
+  <section id="certifications" class="section fade-in">
     <h2>Certifications</h2>
-    <ul>
-      <li>NPTEL - Java Programming</li>
-      <li>Future: Responsive Web Design (freeCodeCamp)</li>
+    <ul class="cert-list">
+      <li>IBM Data Analyst – Coursera</li>
+      <li>Meta Front-End Developer – Coursera</li>
+      <li>NPTEL – Java Programming (73%)</li>
+      <li>MongoDB Basics Certification</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: nivesh.ns@email.com</p>
-    <p>WhatsApp: +91XXXXXXXXXX</p>
-    <p>Fiverr: <a href="https://www.fiverr.com/niveshns" target="_blank">fiverr.com/niveshns</a></p>
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>Email: <b>niveshns05@gmail.com</b></p>
+    <p>Phone: <b>+91 82201 91392</b></p>
+    <p>GitHub: <a href="https://github.com/nive5h" target="_blank">github.com/nive5h</a></p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Nivesh N S. All Rights Reserved.</p>
+  <footer class="footer">
+    <p>© 2025 Nivesh N S | Portfolio</p>
   </footer>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
